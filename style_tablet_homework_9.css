@@ -15,10 +15,6 @@
         left: 50%;
         top: 513.19px;
         text-align: center;
-        /* центрирование кнопки по ширине */
-        /* центрирование кнопки по ширине */
-        /* transform: translate(-50%);      */
-        /* transform: translateY(50%); */
         display: flex;
         /* CSS-свойство flex-direction задает способ размещения flex-элементов в flex-контейнере, определяя главную ось и направление (нормальное или обратное). */
         flex-direction: row;
