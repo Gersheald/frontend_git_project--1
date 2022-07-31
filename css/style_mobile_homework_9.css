@@ -1,5 +1,5 @@
 /*условие: пока экран меньше 660px стили ниже работают*/
-@media handheld, only screen and (max-width: 660px) {
+@media handheld, only screen and (max-width: calc(768px - 1px)) {
     .page__header {
         position: absolute;
         width: 100% ;

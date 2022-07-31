@@ -1,5 +1,5 @@
 /*условие: пока экран меньше 1919px стили ниже работают*/
-@media handheld, only screen and (max-width: 1919px) {
+@media handheld, only screen and (max-width: calc(1920px - 1px)) {
     .page__header {
         position: absolute;
         width: 100% ;
