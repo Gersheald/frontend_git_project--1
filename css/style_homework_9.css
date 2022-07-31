@@ -1,198 +1,264 @@
+@font-face { /*правило для подключения и настройки шрифтов*/
+    font-family: Montserrat; /*записываем семейство шрифта*/
+    src:
+        url("fonts/Montserrat-Light.woff2") format("woff2"), /*здесь ссылки на файлы со шрифтами, сначала подключаем woff2, потом woff*/
+        url("fonts/Montserrat-Light.woff") format("woff"); 
+    font-weight: 300; /*размер шрифта, который находится в подключаемых файлах*/
+    font-style: normal; /*начертание шрифта*/
+}
 
-    .page__header {
-        position: absolute;
-        width: 100%;
-        height: 900px;
-        left: 0px;
-        top: 0px;
-        background-color:  #F4F4F4;         
-    }
-    .header__image--1 {
-        position: absolute;
-        left: 975px;
-        top: 0px;
-        width: 950px;
-        height: 900px;
-    }
-    .header__item--1 {
-        position: absolute;
-        width: 380px;
-        height: 100px;
-        left: 370px;
-        top: 210px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 40px;
-        line-height: 50px;
-        letter-spacing: 0.3em;
-        text-transform: uppercase;
-    }
-    .header__item--2 {
-        position: absolute;
-        width: 911px;
-        height: 90px;
-        left: 370px;
-        top: 340px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 90px;
-        line-height: 90px;
-        letter-spacing: 0.55em;
-        text-transform: uppercase;
-    }
-    .header__item--3 {
-        width: 100%;
-        left: 370px;
-    }
-    .header__item--3_1 {
-        position: absolute;
-        top: 444px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 90px;
-        letter-spacing: 0.55em;
-        text-transform: uppercase;
-    }
-    .header__item--3_2 {
-        position: absolute;
-        top: 444px;
-        left: 462px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 90px;
-        line-height: 90px;
-        letter-spacing: 0.55em;
-        text-transform: uppercase;
-    }
-    .header__item--4 {
-        position: absolute;
-        width: 380px;
-        height: 56px;
-        left: 370px;
-        top: 574px;
-        font-family: 'Prata';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: 0.02em; 
-    }
-    .header__button--1{
-        display: flex;
-        /* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox. */
-        flex-direction: row;
-        /* CSS-свойство flex-direction задает способ размещения flex-элементов в flex-контейнере, определяя главную ось и направление (нормальное или обратное). */
-        justify-content: center;
-        /* Свойство CSS justify-content определяет, как браузер распределяет пространство между элементами контента и вокруг них вдоль основной оси гибкого контейнера и встроенной оси контейнера сетки. */
-        align-items: center;
-        /* Свойство CSS align-items устанавливает значение align-self для всех прямых дочерних элементов как группы. Во Flexbox он управляет выравниванием элементов по поперечной оси. В макете сетки он управляет выравниванием элементов на оси блоков в пределах их области сетки. */
-        position: absolute;
-        width: 220px;
-        height: 60px;
-        left: 370px;
-        top: 676px;
-        background-color: #222222;
-    }
-    .header__button__text--1 {
-        width: 121px;
-        height: 17px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-    }
-    .header__links {
-        text-decoration: none; 
-    }
-    .header__button__link--1 { 
-        color:  #FFFFFF;
-    } 
-    .header__icon--1 {
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        left: 60px;
-        top: 60px;
-    }
-    .header__icon--2 {
-        position: absolute;
-        width: 80px;
-        height: 44px;
-        left: 370px;
-        top: 50px;
-    }
-    .header__social-networks {
-        position: absolute;
-        width: 150px;
-        height: 24px;
-        left: 718px;
-        top: 60px;
-    }
-    .header__icon--3 {
-        float: left;
-    }
-    .header__icon--4 {
-        float: left;
-        margin-left: 30px;
-        transform: translateY(25%);
-    }
-    .header__icon--5 {
-        float: left;
-        margin-left: 30px;
-    }
-    .page__footer {
-        position: absolute;
-        width: 100%;
-        height: 140px;
-        left: 0px;
-        background: #FFFFFF;
-    }
-    .footer__items {
-        position: absolute;
-        height: 18px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        color: #999999; 
-        top: 50%;     
-        /* центрирование по горизонтели 1 */                    
-        transform: translate(0, -50%);
-        /* центрирование по горизонтели 2 */
-    }
-    .footer__item--1 {
-        left: 370px;
-    }
-    .footer__item--2 {
-        left: 670px;
-    }
-    .footer__item--3 {
-        left: 1270px;
-    }
-    /* табличный способ фиксирования подвала - таблица будет подстраивать свои размеры под ее содержание 1 */
-    html,
-    body {
-        height: 100%;
-    }
-    /* фиксирование подвала 2 */
-    .conteiner__all {
-        display: table;
-        height: 100%;
-    }
-    /* фиксирование подвала 3 */
-    .page__content {
-        display: table-row;
-        height: 100%;
-    }
+@font-face { /*правило для подключения и настройки шрифтов*/
+    font-family: Montserrat; /*записываем семейство шрифта*/
+    src:
+        url("fonts/Montserrat-Regular.woff2") format("woff2"), /*здесь ссылки на файлы со шрифтами, сначала подключаем woff2, потом woff*/
+        url("fonts/Montserrat-Regular.woff") format("woff"); 
+    font-weight: 400; /*размер шрифта, который находится в подключаемых файлах*/
+    font-style: normal; /*начертание шрифта*/
+}
+
+@font-face { /*правило для подключения и настройки шрифтов*/
+    font-family: Montserrat; /*записываем семейство шрифта*/
+    src:
+        url("fonts/Montserrat-SemiBold.woff2") format("woff2"), /*здесь ссылки на файлы со шрифтами, сначала подключаем woff2, потом woff*/
+        url("fonts/Montserrat-SemiBold.woff") format("woff"); 
+    font-weight: 600; /*размер шрифта, который находится в подключаемых файлах*/
+    font-style: normal; /*начертание шрифта*/
+}
+
+@font-face { /*правило для подключения и настройки шрифтов*/
+    font-family: Montserrat; /*записываем семейство шрифта*/
+    src:
+        url("fonts/Montserrat-Bold.woff2") format("woff2"), /*здесь ссылки на файлы со шрифтами, сначала подключаем woff2, потом woff*/
+        url("fonts/Montserrat-Bold.woff") format("woff"); 
+    font-weight: 700; /*размер шрифта, который находится в подключаемых файлах*/
+    font-style: normal; /*начертание шрифта*/
+}
+
+@font-face { /*правило для подключения и настройки шрифтов*/
+    font-family: Prata; /*записываем семейство шрифта*/
+    src:
+        url("fonts/Prata-Regular.woff2") format("woff2"), /*здесь ссылки на файлы со шрифтами, сначала подключаем woff2, потом woff*/
+        url("fonts/Prata-Regular.woff") format("woff"); 
+    font-weight: 400; /*размер шрифта, который находится в подключаемых файлах*/
+    font-style: normal; /*начертание шрифта*/
+}
+
+.page__header {
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background-color:  #F4F4F4;         
+}
+
+.header__image--1 {
+    position: absolute;
+    left: 975px;
+    top: 0px;
+    width: 950px;
+    height: 900px;
+}
+
+.header__item--1 {
+    position: absolute;
+    width: 380px;
+    height: 100px;
+    left: 370px;
+    top: 210px;
+    font-family: "Montserrat",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.header__item--2 {
+    position: absolute;
+    width: 911px;
+    height: 90px;
+    left: 370px;
+    top: 340px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 0.55em;
+    text-transform: uppercase;
+}
+
+.header__item--3 {
+    width: 100%;
+    left: 370px;
+}
+
+.header__item--3_1 {
+    position: absolute;
+    top: 444px;
+    font-family:'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 90px;
+    letter-spacing: 0.55em;
+    text-transform: uppercase;
+}
+
+.header__item--3_2 {
+    position: absolute;
+    top: 444px;
+    left: 462px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 0.55em;
+    text-transform: uppercase;
+}
+
+.header__item--4 {
+    position: absolute;
+    width: 380px;
+    height: 56px;
+    left: 370px;
+    top: 574px;
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.02em; 
+}
+
+.header__button--1{
+    display: flex;
+    /* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox. */
+    flex-direction: row;
+    /* CSS-свойство flex-direction задает способ размещения flex-элементов в flex-контейнере, определяя главную ось и направление (нормальное или обратное). */
+    justify-content: center;
+    /* Свойство CSS justify-content определяет, как браузер распределяет пространство между элементами контента и вокруг них вдоль основной оси гибкого контейнера и встроенной оси контейнера сетки. */
+    align-items: center;
+    /* Свойство CSS align-items устанавливает значение align-self для всех прямых дочерних элементов как группы. Во Flexbox он управляет выравниванием элементов по поперечной оси. В макете сетки он управляет выравниванием элементов на оси блоков в пределах их области сетки. */
+    position: absolute;
+    width: 220px;
+    height: 60px;
+    left: 370px;
+    top: 676px;
+    background-color: #222222;
+}
+
+.header__button__text--1 {
+    width: 121px;
+    height: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.header__links {
+    text-decoration: none; 
+}
+
+.header__button__link--1 { 
+    color:  #FFFFFF;
+} 
+
+.header__icon--1 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 60px;
+    top: 60px;
+}
+
+.header__icon--2 {
+    position: absolute;
+    width: 80px;
+    height: 44px;
+    left: 370px;
+    top: 50px;
+}
+
+.header__social-networks {
+    position: absolute;
+    width: 150px;
+    height: 24px;
+    left: 718px;
+    top: 60px;
+}
+
+.header__icon--3 {
+    float: left;
+}
+
+.header__icon--4 {
+    float: left;
+    margin-left: 30px;
+    transform: translateY(25%);
+}
+
+.header__icon--5 {
+    float: left;
+    margin-left: 30px;
+}
+
+.page__footer {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    left: 0px;
+    background: #FFFFFF;
+}
+
+.footer__items {
+    position: absolute;
+    height: 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999999; 
+    top: 50%;     
+    /* центрирование по горизонтели 1 */                    
+    transform: translate(0, -50%);
+    /* центрирование по горизонтели 2 */
+}
+
+.footer__item--1 {
+    left: 370px;
+}
+
+.footer__item--2 {
+    left: 670px;
+}
+
+.footer__item--3 {
+    left: 1270px;
+}
+
+html, 
+body { /* табличный способ фиксирования подвала - таблица будет подстраивать свои размеры под ее содержание 1 */
+    height: 100%;
+}
+
+.conteiner__all { /* фиксирование подвала 2 */
+    display: table;
+    height: 100%;
+}
+
+.page__content { /* фиксирование подвала 3 */
+    display: table-row;
+    height: 100%;
+}
 
 
 
