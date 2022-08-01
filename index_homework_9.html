@@ -5,21 +5,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
         <!-- подключение шрифтов google fonts: Prata Regular 400; Montserrat light 400  -->
         <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,400&family=Prata&display=swap" rel="stylesheet"> -->
-        <!-- назначает, что размер экрана сайта будет соответствовать реальным размерам устройства, у соврмеменных мобильников реальная матрица телефонов сильно меньше 1920 px -->
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- подключение CSS с заданными стилями-->
-        <link href="css/style_homework_9.css" rel="stylesheet">
-        <!-- подключение CSS с заданными стилями для адаптивной верстки под планшеты -->
-        <link href="css/style_tablet_homework_9.css" rel="stylesheet">
-        <!-- подключение CSS с заданными стилями для адаптивной верстки под смартфоны-->
-        <link href="css/style_mobile_homework_9.css" rel="stylesheet">
-          
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--метатег для масштабирования сайта при изменении ширины экрана. назначает, что размер экрана сайта будет соответствовать реальным размерам устройства, у соврмеменных мобильников реальная матрица телефонов сильно меньше 1920 px-->
         <title>Maxim Brown</title>
+        <link href="css/style_homework_9.css" rel="stylesheet"><!-- подключение CSS с заданными стилями-->
+        <link href="css/style_tablet_homework_9.css" rel="stylesheet"><!-- подключение CSS с заданными стилями для адаптивной верстки под планшеты -->
+        <link href="css/style_mobile_homework_9.css" rel="stylesheet"><!-- подключение CSS с заданными стилями для адаптивной верстки под смартфоны-->
     </head>
-    <body>
-        <div class="conteiner__all">
-            <div class="page__content">
+
+    <body class="page__body">
+        <!-- <div class="conteiner__all"> -->
+            <!-- <div class="page__content"> -->
                 <header class="page__header">
                     <div class="header__call-calling">
                         <div class="header__icons header__icon--1">
@@ -64,21 +59,26 @@
                         </div>
                         <div class="header__items header__item--4">Нестандартные фотографии, которые помогут вам выделиться из толпы</div>
                         <div class="header__buttons header__button--1">
-                            <a class="header__links header__button__link--1" href="https://www.figma.com/file/zy3bIczNomGgAhlZphciew/Frontend-Lab_homework?node-id=0%3A1">
+                            <a class="header__links header__button__link--1" href="#">
                                 <span class="header__button__text--1">ЗАПИСАТЬСЯ</span>
                             </a>
                         </div>
                     </div>
                 </header>
-                <main>
-                    <section></section>
-                </main>  
-            </div>
+
+                <main class="page__mane">
+                    <section>
+                        <div class="mane__text">dddddddd</div>
+                    </section>
+                </main >  
+            <!-- </div> -->
+
             <footer class="page__footer">
                 <div class="footer__items footer__item--1">© Фотограф Максим Браун 2022</div>
                 <div class="footer__items footer__item--2">Политика конфиденциальности</div>
                 <div class="footer__items footer__item--3">Разработка и маркетинг WebCanape</div>
             </footer>
-        </div>
+
+        <!-- </div> -->
     </body>
 </html>

@@ -1,21 +1,26 @@
 /*условие: пока экран меньше 660px стили ниже работают*/
 @media handheld, only screen and (max-width: calc(768px - 1px)) {
     .page__header {
-        position: absolute;
+        /* position: absolute; */
         width: 100% ;
         height: 690px;
         left: 0px;
         top: 0px;       
         background-color:  #F4F4F4;
     }
+
     .header__image--1 {
         position: absolute;
-        width: 100%;
-        height:  auto;
+        /* width: 100%;
+        height:  auto; */
+        width: 340px;
+        height:  320px;
         left: 50%;
         top: 363.96px;
         transform: translate(-50%); 
+        margin-bottom: 140px;
     }
+
     .header__item--1 {
         position: absolute;
         width: 100%;
@@ -31,6 +36,7 @@
         letter-spacing: 0.3em;
         text-transform: uppercase;
     }
+
     .header__item--2 {
         position: absolute;
         width: 100%;
@@ -46,13 +52,15 @@
         letter-spacing: 0.3em;
         text-transform: uppercase;  
     }
+
     .header__item--3 {
         width: 100%;
         text-align: center;
     }
+
     .header__item--3_1 {
         position: absolute;
-        left: -110px;
+        left: -115px;
         top: 166px;
         font-family: 'Montserrat',sans-serif;
         font-style: normal;
@@ -62,6 +70,7 @@
         letter-spacing: 0.55em;
         text-transform: uppercase;  
     }
+
     .header__item--3_2 {
         position: absolute;
         height: 30px; 
@@ -75,6 +84,7 @@
         letter-spacing: 0.3em;
         text-transform: uppercase;
     }
+
     .header__item--4 {
         position: absolute;
         width: 300px;
@@ -88,35 +98,31 @@
         line-height: 22px;
         text-align: center;
         letter-spacing: 0.02em;
-        /* центрирование кнопки по ширине */
-        -ms-transform: translate(-50%);
-        /* центрирование кнопки по ширине */
-        transform: translate(-50%);     
+        
+        -ms-transform: translate(-50%);/* центрирование кнопки по ширине */
+        
+        transform: translate(-50%);/* центрирование кнопки по ширине */
     }
+
     .header__button--1{
-        display: flex;
-        /* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox. */
-        flex-direction: row;
-        /* CSS-свойство flex-direction задает способ размещения flex-элементов в flex-контейнере, определяя главную ось и направление (нормальное или обратное). */
-        justify-content: center;
-        /* Свойство CSS justify-content определяет, как браузер распределяет пространство между элементами контента и вокруг них вдоль основной оси гибкого контейнера и встроенной оси контейнера сетки. */
-        align-items: center;
-        /* Свойство CSS align-items устанавливает значение align-self для всех прямых дочерних элементов как группы. Во Flexbox он управляет выравниванием элементов по поперечной оси. В макете сетки он управляет выравниванием элементов на оси блоков в пределах их области сетки. */
+        display: flex;/* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox. */
+        flex-direction: row;/* CSS-свойство flex-direction задает способ размещения flex-элементов в flex-контейнере, определяя главную ось и направление (нормальное или обратное). */
+        justify-content: center;/* Свойство CSS justify-content определяет, как браузер распределяет пространство между элементами контента и вокруг них вдоль основной оси гибкого контейнера и встроенной оси контейнера сетки. */
+        align-items: center;/* Свойство CSS align-items устанавливает значение align-self для всех прямых дочерних элементов как группы. Во Flexbox он управляет выравниванием элементов по поперечной оси. В макете сетки он управляет выравниванием элементов на оси блоков в пределах их области сетки. */
         position: absolute;
         width: 200px;
         height: 50px;
         left: 50%;
-        /* центрирование кнопки по ширине */
-        -ms-transform: translate(-50%);
-        /* центрирование кнопки по ширине */
-        transform: translate(-50%);
+        -ms-transform: translate(-50%);/* центрирование кнопки по ширине */
+        transform: translate(-50%);/* центрирование кнопки по ширине */
         top: 280px;
         background-color: #222222;
     }
+
     .header__button__text--1 {
         width: 121px;
         height: 17px;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
@@ -125,12 +131,15 @@
         letter-spacing: 0.15em;
         text-transform: uppercase;
     }
+
     .header__links {
         text-decoration: none; 
     }
+
     .header__button__link--1 { 
         color:  #FFFFFF;
     } 
+
     .header__icon--1 {
         position: absolute;
         width: 24px;
@@ -138,6 +147,7 @@
         left: 20px;
         top: 20px;
     }
+
     .header__icon--2 {
         position: absolute;
         width: 100%;
@@ -146,18 +156,28 @@
         top: 19px;
         text-align: center;
     }
+
     .header__social-networks {
         display: none;
     }
+
     .header__icon--3 {
         display: none;
     }
+
     .header__icon--4 {
         display: none;
     }
+
     .header__icon--5 {
         display: none;
     }
+
+    .mane__text {
+        /* margin-top: 238px; */
+        margin-bottom: 140px;
+    }
+
     .page__footer {
         position: absolute;
         width: 100% ;
@@ -165,11 +185,11 @@
         left: 0px;
         background: #FFFFFF;
     }
+
     .footer__items {
         position: static;
-        /* width: 100%; */
         height: 30px;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -177,18 +197,18 @@
         text-align: center;
         transform: translateY(100%);
     }
-    /* табличный способ фиксирования подвала - таблица будет подстраивать свои размеры под ее содержание 1 */
+    
     html,
-    body {
+    body {/* табличный способ фиксирования подвала - таблица будет подстраивать свои размеры под ее содержание 1 */
         height: 100%;
     }
-    /* фиксирование подвала 2 */
-    .conteiner__all {
+    
+    .page__body {/* фиксирование подвала 2 */
         display: table;
         height: 100%;
     }
-    /* фиксирование подвала 3 */
-    .page__content {
+    
+    .page__mane {/* фиксирование подвала 3 */
         display: table-row;
         height: 100%;
     }
