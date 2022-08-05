@@ -175,26 +175,29 @@
     }
 
     .main__textbox {
-        margin-top: 298px;
-        
+        margin-top: calc(298px + 140px);
+    }
+
+    .main__textbox { 
+        width: 100%;  
     }
 
     .main__text {
-        width: 980px;
-        height: 136px;
-        display: flex;/* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox. */
-        justify-content: center;/* Свойство CSS justify-content определяет, как браузер распределяет пространство между элементами контента и вокруг них вдоль основной оси гибкого контейнера и встроенной оси контейнера сетки. */ 
-        align-items: center;/* Свойство CSS align-items устанавливает значение align-self для всех прямых дочерних элементов как группы. Во Flexbox он управляет выравниванием элементов по поперечной оси. В макете сетки он управляет выравниванием элементов на оси блоков в пределах их области сетки. */
+        position: absolute;
+        width: 660px;
+        height: 150px;
+        left: 50%;
         background-color: rebeccapurple;
         font-family: 'Prata';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
-        line-height: 34px;
+        font-size: 20px;
+        line-height: 30px;
         text-align: center;
         letter-spacing: 0.02em;
         color: #222222;
-        transform: translate(50%);
+        -ms-transform: translate(50%);/* центрирование кнопки по ширине */
+        transform: translate(-50%); /* центрирование кнопки по ширине */
         margin-bottom: 140px;   
     }
 
