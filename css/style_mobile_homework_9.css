@@ -16,7 +16,7 @@
         width: 340px;
         height:  320px;
         left: 50%;
-        top: 363.96px;
+        top: 370px;
         transform: translate(-50%); 
         margin-bottom: 140px;
     }
@@ -173,7 +173,7 @@
         display: none;
     }
 
-    .mane__text {
+    .main__textbox {
         /* margin-top: 238px; */
         margin-bottom: 140px;
     }
