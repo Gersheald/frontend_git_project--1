@@ -236,17 +236,22 @@ html { /*здесь стили для всего документа*/
     margin-left: 30px;
 }
 
-.main__textbox {
+.page__main {
     position: static;
     width: 1920px;
     height: 900px;
     left: 0px;
    
     background-color: aqua;
+}
+
+.main__textbox--1 {
+    
     
 }
 
-.main__text {
+.main__text--1 {
+    position: relative;
     width: 980px;
     height: 136px;
     display: flex;/* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox. */
@@ -262,6 +267,19 @@ html { /*здесь стили для всего документа*/
     letter-spacing: 0.02em;
     color: #222222;
     transform: translate(50%);
+    margin-bottom: 140px;   
+}
+
+.main__image--1 {
+    position: relative;
+    width: 1180px;
+    height: 500px;
+    left: 50%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #222222;
+    -ms-transform: translate(50%);/* центрирование кнопки по ширине */
+    transform: translate(-50%); /* центрирование кнопки по ширине */
     margin-bottom: 140px;   
 }
 

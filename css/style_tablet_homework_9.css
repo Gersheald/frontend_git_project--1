@@ -174,16 +174,20 @@
         display: none;
     }
 
-    .main__textbox {
+    .main__textbox--1 {
         margin-top: calc(298px + 70px);
     }
 
-    .main__textbox { 
-        width: 100%;  
+    .page__main {
+        width: 100%; 
     }
 
-    .main__text {
-        position: absolute;
+    .main__textbox--1 { 
+         
+    }
+
+    .main__text--1 {
+        position: relative;
         width: 660px;
         height: 150px;
         left: 50%;
@@ -193,6 +197,19 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #222222;
+        -ms-transform: translate(50%);/* центрирование кнопки по ширине */
+        transform: translate(-50%); /* центрирование кнопки по ширине */
+        margin-bottom: 70px;   
+    }
+
+    .main__image--1 {
+        position: relative;
+        width: 660px;
+        height: 280px;
+        left: 50%;
         text-align: center;
         letter-spacing: 0.02em;
         color: #222222;
