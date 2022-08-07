@@ -18,7 +18,7 @@
         left: 50%;
         top: 370px;
         transform: translate(-50%); 
-        margin-bottom: 140px;
+        /* margin-bottom: 50px; */
     }
 
     .header__item--1 {
@@ -98,9 +98,7 @@
         line-height: 22px;
         text-align: center;
         letter-spacing: 0.02em;
-        
         -ms-transform: translate(-50%);/* центрирование кнопки по ширине */
-        
         transform: translate(-50%);/* центрирование кнопки по ширине */
     }
 
@@ -174,8 +172,26 @@
     }
 
     .main__textbox {
-        /* margin-top: 238px; */
-        margin-bottom: 140px;
+        margin-top: -90px;
+    }
+
+    .main__text {
+        position: absolute;
+        width: 310px;
+        height: 176px;
+        left: 50%;
+        background-color: rebeccapurple;
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #222222;
+        -ms-transform: translate(50%);/* центрирование кнопки по ширине */
+        transform: translate(-50%); /* центрирование кнопки по ширине */
+        margin-bottom: 50px;   
     }
 
     .page__footer {

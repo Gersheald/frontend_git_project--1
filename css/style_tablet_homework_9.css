@@ -175,7 +175,7 @@
     }
 
     .main__textbox {
-        margin-top: calc(298px + 140px);
+        margin-top: calc(298px + 70px);
     }
 
     .main__textbox { 
@@ -198,7 +198,7 @@
         color: #222222;
         -ms-transform: translate(50%);/* центрирование кнопки по ширине */
         transform: translate(-50%); /* центрирование кнопки по ширине */
-        margin-bottom: 140px;   
+        margin-bottom: 70px;   
     }
 
     .page__footer {
