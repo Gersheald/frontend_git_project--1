@@ -239,7 +239,7 @@ html { /*здесь стили для всего документа*/
 .page__main {
     position: static;
     width: 1920px;
-    height: 900px;
+    height: 1500px;
     left: 0px;
    
     background-color: aqua;
@@ -252,12 +252,12 @@ html { /*здесь стили для всего документа*/
 
 .main__text--1 {
     position: relative;
-    width: 980px;
+    width: 1000px;
     height: 136px;
+    left: 50%;
     display: flex;/* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox. */
     justify-content: center;/* Свойство CSS justify-content определяет, как браузер распределяет пространство между элементами контента и вокруг них вдоль основной оси гибкого контейнера и встроенной оси контейнера сетки. */ 
     align-items: center;/* Свойство CSS align-items устанавливает значение align-self для всех прямых дочерних элементов как группы. Во Flexbox он управляет выравниванием элементов по поперечной оси. В макете сетки он управляет выравниванием элементов на оси блоков в пределах их области сетки. */
-    background-color: rebeccapurple;
     font-family: 'Prata';
     font-style: normal;
     font-weight: 400;
@@ -266,7 +266,8 @@ html { /*здесь стили для всего документа*/
     text-align: center;
     letter-spacing: 0.02em;
     color: #222222;
-    transform: translate(50%);
+    -ms-transform: translate(50%);/* центрирование кнопки по ширине */
+    transform: translate(-50%);
     margin-bottom: 140px;   
 }
 
@@ -280,8 +281,61 @@ html { /*здесь стили для всего документа*/
     color: #222222;
     -ms-transform: translate(50%);/* центрирование кнопки по ширине */
     transform: translate(-50%); /* центрирование кнопки по ширине */
-    margin-bottom: 140px;   
+    margin-bottom: 70px;   
 }
+
+.benefits {/*добавим стили для блока с инструкцией*/
+    margin: 0 auto 131px auto; /*отцентрируем и добавим отступ до следующего блока*/
+    max-width: 1180px;/*укажем максимальную ширину*/
+}
+
+.benefits__list {/*стили для списка этапов инструкции*/
+    list-style: none; /*отключим маркеры у списка*/
+    margin: 10px auto 51px;/*дадим списку отступы сверху и снизу и отцентрируем*/
+    padding: 0;/*обнулим внутренние отступы*/
+    display: flex; /*расположим элементы в ряд*/
+    flex-wrap: wrap; /*если будет слишком много пунктов, то пускай они переносятся на новую строку*/
+    column-gap: 20px; /*расстояние между пунктами*/
+}
+
+.benefits__item { /*стили для пункта инструкции*/
+    width: 180px; /*у них одинаковая ширина*/
+    position: relative; /*понадобится для добавления псевдоэлемента*/
+    margin: 0 auto; /*укажем стандартные отступы центрирования*/
+}
+
+.benefits__title { /*для заголовка этапа инструкции*/
+    text-align: center;
+    margin: 0 auto 20px;
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 65px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.benefits__text { /*и для самого текста инструкции*/
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+
+
+
+
+
+
 
 .page__footer {
     position: absolute;
