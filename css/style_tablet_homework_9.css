@@ -217,7 +217,7 @@
         margin-bottom: 25px;   
     }
 
-    .benefits {/*добавим стили для блока с инструкцией*/
+    .main__benefits {/*добавим стили для блока с инструкцией*/
         margin: 0 auto 131px auto; /*отцентрируем и добавим отступ до следующего блока*/
         max-width: 660px;/*укажем максимальную ширину*/
     }
@@ -263,7 +263,31 @@
         color: #222222;
     }
 
+    .main__portfolio {
+        max-width: 1180px;/*укажем максимальную ширину*/
+        margin: 0 auto 140px auto; /*отцентрируем и добавим отступ до следующего блока*/
+    }
 
+    .portfolio__image-wrapper {
+        margin-bottom: 20px; 
+       
+    }
+
+    .portfolio__item { /*стили для пункта инструкции*/
+        /* width: 320px;
+        height: auto; */
+    }
+    .portfolio__image--3 {
+        margin-top: -220px;
+      
+        
+    }
+    
+    .portfolio__image--7 {
+        margin-top: -220px;
+       
+        
+    }
 
 
 

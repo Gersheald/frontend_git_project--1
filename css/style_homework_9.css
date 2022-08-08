@@ -239,10 +239,10 @@ html { /*здесь стили для всего документа*/
 .page__main {
     position: static;
     width: 1920px;
-    height: 1500px;
+    height: 100%;
     left: 0px;
    
-    background-color: aqua;
+    background-color: rgb(103, 103, 103);
 }
 
 .main__textbox--1 {
@@ -284,9 +284,10 @@ html { /*здесь стили для всего документа*/
     margin-bottom: 70px;   
 }
 
-.benefits {/*добавим стили для блока с инструкцией*/
+.main__benefits {/*добавим стили для блока с инструкцией*/
     margin: 0 auto 131px auto; /*отцентрируем и добавим отступ до следующего блока*/
     max-width: 1180px;/*укажем максимальную ширину*/
+    margin-bottom: 140px; 
 }
 
 .benefits__list {/*стили для списка этапов инструкции*/
@@ -330,8 +331,46 @@ html { /*здесь стили для всего документа*/
     color: #222222;
 }
 
+h2 { /*меняются св-ва шрифта и отступ у загловков h2*/
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 70px;
+}
 
+.main__portfolio {
+    max-width: 1180px;/*укажем максимальную ширину*/
+    margin: 0 auto 140px auto; /*отцентрируем и добавим отступ до следующего блока*/
+}
 
+.portfolio__list {/*стили для списка этапов инструкции*/
+    list-style: none; /*отключим маркеры у списка*/
+    margin: 0; /*обнулим внешние отступы*/
+    padding: 0; /*и внутренние*/
+    display:flex; /*расположим элементы в ряд*/
+    flex-wrap:wrap; /*если будет слишком много пунктов, то пускай они переносятся на новую строку*/
+    column-gap: 20px;/*расстояние между пунктами*/
+}
+
+.portfolio__image-wrapper {
+    margin-bottom: 20px; 
+}
+.portfolio__item { /*стили для пункта инструкции*/
+    
+}
+.portfolio__image--3 {
+    margin-top: -220px;
+}
+
+.portfolio__image--7 {
+    margin-top: -220px;
+}
 
 
 
