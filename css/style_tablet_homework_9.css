@@ -182,10 +182,6 @@
         width: 100%; 
     }
 
-    .main__textbox--1 { 
-         
-    }
-
     .main__text--1 {
         position: relative;
         width: 660px;
@@ -286,16 +282,8 @@
     }
 
     .portfolio__images {
-        /* position: relative; */
-        /* width: 320px; */
-        /* height: auto; */
         width: 320px;
         height: auto;
-    }
-
-    .portfolio__item { /*стили для пункта инструкции*/
-        /* width: 320px;
-        height: auto; */
     }
 
     .portfolio__image--3 {    
@@ -312,7 +300,7 @@
 
 
 
-    
+
     .page__footer {
         position: absolute;
         width: 100% ;

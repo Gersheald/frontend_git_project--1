@@ -1,7 +1,6 @@
 /*условие: пока экран меньше 660px стили ниже работают*/
 @media handheld, only screen and (max-width: calc(768px - 1px)) {
     .page__header {
-        /* position: absolute; */
         width: 100% ;
         height: 690px;
         left: 0px;
@@ -11,14 +10,11 @@
 
     .header__image--1 {
         position: absolute;
-        /* width: 100%;
-        height:  auto; */
         width: 340px;
         height:  320px;
         left: 50%;
         top: 370px;
         transform: translate(-50%); 
-        /* margin-bottom: 50px; */
     }
 
     .header__item--1 {
@@ -107,7 +103,6 @@
         flex-direction: row;/* CSS-свойство flex-direction задает способ размещения flex-элементов в flex-контейнере, определяя главную ось и направление (нормальное или обратное). */
         justify-content: center;/* Свойство CSS justify-content определяет, как браузер распределяет пространство между элементами контента и вокруг них вдоль основной оси гибкого контейнера и встроенной оси контейнера сетки. */
         align-items: center;/* Свойство CSS align-items устанавливает значение align-self для всех прямых дочерних элементов как группы. Во Flexbox он управляет выравниванием элементов по поперечной оси. В макете сетки он управляет выравниванием элементов на оси блоков в пределах их области сетки. */
-        /* position: absolute; */
         width: 200px;
         height: 50px;
         left: 50%;
@@ -169,11 +164,6 @@
 
     .header__icon--5 {
         display: none;
-    }
-
-    .page__main {
-        
-        
     }
 
     .main__textbox--1 {
@@ -279,17 +269,10 @@
     }
 
     .portfolio__images {
-        /* position: relative; */
-        /* width: 320px; */
-        /* height: auto; */
         width: 340px;
         height: auto;
     }
 
-    .portfolio__item { /*стили для пункта инструкции*/
-        /* width: 320px;
-        height: auto; */
-    }
 
     .portfolio__image--3 {    
         margin-top: 0;
