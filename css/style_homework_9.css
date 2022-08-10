@@ -389,15 +389,13 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
 }
 
 .reviews__image-wrapper {
-    background-color: #F4F4F4;
     margin-bottom: 20px;
 }
 
 .reviews__block-wrapper {
-    margin-bottom: 20px;
     width: 340px;
     height: 64px;
-    background-color: red;
+    margin-bottom: 20px;
 }
 
 .reviews__images {
@@ -409,7 +407,6 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
 .reviews__description-wrapper {
     float: left;
     width: 260px;
-    background-color: #fff;
     padding: 0;
     margin-left: 20px;
 }
@@ -445,7 +442,6 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
     font-size: 16px;
     line-height: 26px;
     color: #666666; 
-    background-color: aqua;
     padding-bottom: 50px;
 }
 

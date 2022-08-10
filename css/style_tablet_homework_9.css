@@ -316,15 +316,13 @@
     }
     
     .reviews__image-wrapper {
-        background-color: #F4F4F4;
         margin-bottom: 15px;
     }
     
     .reviews__block-wrapper {
-        margin-bottom: 15px;
         width: 300px;
         height: 54px;
-        background-color: red;
+        margin-bottom: 15px;
     }
     
     .reviews__images {
@@ -336,7 +334,6 @@
     .reviews__description-wrapper {
         float: left;
         width: 230px;
-        background-color: #fff;
         padding: 0;
         margin-left: 20px;
     }
@@ -372,7 +369,6 @@
         font-size: 14px;
         line-height: 22px;
         color: #666666; 
-        background-color: aqua;
         padding-bottom: 35px;
     }
 

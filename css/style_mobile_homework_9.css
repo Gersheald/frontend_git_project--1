@@ -261,7 +261,7 @@
 
     .main__portfolio {
         max-width: 340px;/*укажем максимальную ширину*/
-        margin: 0 auto 70px auto; /*отцентрируем и добавим отступ до следующего блока*/
+        margin: 0 auto 50px auto; /*отцентрируем и добавим отступ до следующего блока*/
     }
 
     .portfolio__image-wrapper {
@@ -281,9 +281,81 @@
     .portfolio__image--7 {
         margin-top: 0; 
     }
-
-
-
+    
+    .main__reviews {
+        max-width: 340px;/*укажем максимальную ширину*/
+        margin: 0 auto 50px auto; /*отцентрируем и добавим отступ до следующего блока*/
+    }
+    
+    .reviews__list {/*стили для списка этапов инструкции*/
+        list-style: none; /*отключим маркеры у списка*/
+        display:flex; /*расположим элементы в ряд*/
+        flex-wrap:wrap; /*если будет слишком много пунктов, то пускай они переносятся на новую строку*/
+        column-gap: 40px;/*расстояние между пунктами*/
+    }
+    
+    .reviews__item { /*стили для пункта инструкции*/
+        display:block; /*расположим элементы в ряд*/
+        flex-wrap:wrap; /*если будет слишком много пунктов, то пускай они переносятся на новую строку*/
+        
+    }
+    
+    .reviews__image-wrapper {
+        margin-bottom: 15px;
+    }
+    
+    .reviews__block-wrapper {
+        width: 300px;
+        height: 54px;
+        margin-bottom: 15px;
+    }
+    
+    .reviews__images {
+        float: left;
+        width: 50px;
+        height: auto;
+    }
+    
+    .reviews__description-wrapper {
+        float: left;
+        width: 230px;
+        padding: 0;
+        margin-left: 20px;
+    }
+    
+    .reviews__title {
+        margin: 0; /*обнулим внешние отступы*/
+        padding: 1px; /*и внутренние*/
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #222222;
+    }
+    
+    .reviews__age {
+        margin: 0; /*обнулим внешние отступы*/
+        padding: 1px; /*и внутренние*/
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #999999;
+    }
+    
+    .reviews__text {
+        width: 300px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #666666; 
+        padding-bottom: 25px;
+    }
 
 
 
