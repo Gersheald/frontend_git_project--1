@@ -434,7 +434,7 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
 .main__prices {
     width: 1920px;
     /* height: 100%; */
-    /* height: 760px; */
+    height: 760px;
     background-color:  #F4F4F4;  
     /* padding-bottom: -150px; */
     /* margin-bottom: -250px;        */
@@ -443,8 +443,8 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
 }
 
 .prices__images {
-    position: relative;
-    /* float: right; */
+    /* position: relative; */
+    float: right;
     width: 950px;
     height: 760px;
     left: 970px;
@@ -455,11 +455,12 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
 }
 
 .prices__textboxes {
-    /* float: left; */
-    position: relative;
+    float: left;
+    /* position: relative; */
     width: 490px;
-    left: 370px;
-    top: 100px;
+    /* left: 370px;
+    top: 100px; */
+    margin: 100px auto auto 370px;
     background-color: rgb(86, 113, 113);    
 }
 
@@ -488,21 +489,33 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
 
 
 .prices__list {
-    position: relative;
+    position: absolute;
+    /* margin-top: -500px; */
+    /* position: relative; */
     /* clear: both; */
     /* float: left; */
     width: 1180px;
     padding: 0;
-    margin: 0;
+    /* margin: 0; */
+    /* text-align: center; */
     list-style: none; /*отключим маркеры у списка*/
     display:flex; /*расположим элементы в ряд*/
+
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+
     flex-wrap:wrap; /*если будет слишком много пунктов, то пускай они переносятся на новую строку*/
     column-gap: 20px;/*расстояние между пунктами*/
     background-color: aqua;
-    margin: 0 auto; /*отцентрируем и добавим отступ до следующего блока*/
-    bottom: 570px;
+    /* margin: 0 auto;  */
+    /* bottom: 2px; */
+    margin-top: 400px;
+    left: 370px;
+    /* transform: translateX(33%); */
     
-
+    /* transform: translate(-50%); */
+   
 }
 
 .prices__item {
@@ -563,6 +576,8 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
     color: #222222;
     
 }
+
+
 
 
 
