@@ -358,7 +358,194 @@
 
 
 
-
+    .main__prices {
+        
+        width: 100%;
+        height: 100%;
+        /* height: 760px; */
+        background-color:  #c22424; 
+        /* margin-top: 250px; */
+        /* border-top: 250px solid black ; */
+        /* padding-top: 250px; */
+        /* margin-top: 335px; */
+        margin: 0;
+        
+    }
+    
+    .main__prices-wrapper {
+    
+        position: relative;
+        max-width: 340px;/*укажем максимальную ширину*/
+        margin: 0 auto 50px auto; /*отцентрируем и добавим отступ до следующего блока*/
+        /* width: 768px; */
+        /* width: 1919px; */
+        height: 100%;
+        /* height: 1095px; */
+        background-color:  #F4F4F4;  
+        /* padding-bottom: -150px; */
+        /* margin-top: -250px;        */
+        /* top:-250px; */
+        
+        
+    }
+    
+    .prices__images {
+        position: relative;
+        /* float: right; */
+        width: 340px;
+        height: 270px;
+        /* top:-265px; */
+        /* left: 970px;
+        top:-210px; */
+        /* padding: 0; */
+        /* left: 50%; */
+        /* transform: translateX(-50%); */
+        /* left: 50%; */
+        /* -ms-transform: translate(50%);
+        transform: translate(-50%);  */
+        text-align: center;
+        margin-bottom: 60px;
+        margin: 0;
+        top:0;
+    }
+    
+    .prices__textboxes {
+        /* float: left; */
+        position: relative;
+        width: 300px;
+        margin: 0;
+        /* left: 370px;
+        top: 100px; */
+        /* margin: 100px auto auto 370px; */
+        background-color: rgb(86, 113, 113);    
+        text-align: center;
+        /* margin-top: 265px; */
+        left: 50%;
+        -ms-transform: translate(50%);
+        transform: translate(-50%); 
+    }
+    
+    .prices__title--1 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: #222222;
+        background-color: aqua;
+        margin-bottom: 60px;
+        
+    }
+    
+    .prices__text--1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #666666;
+        background-color: forestgreen;
+        margin-bottom: 60px;
+        
+    }
+    
+    
+    
+    .prices__list {
+        position: relative;
+        /* margin-top: -500px; */
+        /* position: relative; */
+        /* clear: both; */
+        /* float: left; */
+        width: 300px;
+        padding: 0;
+        margin: 0;
+        /* margin: 0; */
+        /* text-align: center; */
+        list-style: none; /*отключим маркеры у списка*/
+        display:flex; /*расположим элементы в ряд*/
+    
+        /* flex-direction: row;
+        justify-content: center;
+        align-items: center; */
+    
+        flex-wrap:wrap; /*если будет слишком много пунктов, то пускай они переносятся на новую строку*/
+        column-gap: 20px;/*расстояние между пунктами*/
+        row-gap: 20px;
+        background-color: aqua;
+        /* margin: 0 auto;  */
+        /* bottom: 2px; */
+        /* margin-top: 400px; */
+        
+        /* transform: translateX(33%); */
+        
+        /* transform: translate(-50%); */
+        left: 50%;
+        -ms-transform: translate(50%);
+        transform: translate(-50%);     
+        /* left: 0;     */
+    }
+    
+    .prices__item {
+        width: 300px;
+        height: 90px;
+        display:block; /*расположим элементы в ряд*/
+        flex-wrap:wrap; /*если будет слишком много пунктов, то пускай они переносятся на новую строку*/
+        background-color: blue;
+        padding: 0;
+    }
+    
+    .prices__icons {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        margin: 20px 20px 20px 100px;
+    }
+    
+    
+    .prices__icon-wrapper {
+        padding: 0;
+        width: 60px;
+        background-color: aquamarine;
+        left: 50%;
+        -ms-transform: translate(50%);/* центрирование кнопки по ширине */
+        transform: translate(-50%); /* центрирование кнопки по ширине */
+    }
+    
+    .prices__title {
+        width: 200px;
+        margin: 20px auto auto 20px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        align-items: center;
+        text-align: start;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #222222;
+        left: 50px;   
+        background-color: #c22424;
+    }
+    
+    .prices__cost {
+        width: 160px;
+        margin: 8px auto auto 20px;
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        align-items: center;
+        text-align: start;
+        letter-spacing: 0.02em;
+        color: #222222;
+        left: 50px;   
+        background-color: #c22424;
+    }
 
 
 
