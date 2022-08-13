@@ -431,14 +431,28 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
     padding-bottom: 50px;
 }
 
+
+
+
 .main__prices {
-    width: 1920px;
+    width: 100%;
+    height: 100%;
+    /* height: 760px; */
+    background-color:  #c22424;
+}
+
+.main__prices-wrapper {
+    
+    max-width: 1920px;/*укажем максимальную ширину*/
+    margin: 0 auto 100px auto; /*отцентрируем и добавим отступ до следующего блока*/
+    /* width: 1920px; */
     /* height: 100%; */
     height: 760px;
     background-color:  #F4F4F4;  
     /* padding-bottom: -150px; */
     /* margin-bottom: -250px;        */
     
+
     
 }
 
@@ -447,11 +461,10 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
     float: right;
     width: 950px;
     height: 760px;
-    left: 970px;
-    top:-210px;
+    /* left: 970px;
+    top:-210px; */
     /* padding: 0; */
-    
-    
+    /* margin-bottom: 60px; */
 }
 
 .prices__textboxes {
@@ -474,6 +487,8 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
     text-transform: uppercase;
     color: #222222;
     background-color: aqua;
+    margin: 0;
+    /* margin-bottom: 60px; */
 }
 
 .prices__text--1 {
@@ -484,6 +499,8 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
     line-height: 26px;
     color: #666666;
     background-color: forestgreen;
+    margin: 0;
+    /* margin-bottom: 60px; */
 }
 
 
@@ -515,7 +532,7 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
     /* transform: translateX(33%); */
     
     /* transform: translate(-50%); */
-   
+    
 }
 
 .prices__item {
@@ -526,6 +543,7 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
     flex-wrap:wrap; /*если будет слишком много пунктов, то пускай они переносятся на новую строку*/
     background-color: blue;
     padding: 0;
+    
 }
 
 .prices__icons {
