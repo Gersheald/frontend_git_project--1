@@ -1,18 +1,16 @@
 /*условие: пока экран меньше 660px стили ниже работают*/
 @media handheld, only screen and (max-width: calc(768px - 1px)) {
    
-    .page__body {
-        /* ------------Доделать центрирование страницы и сократить повторяющийся код ----------------*/
-
-    max-width: 768px;/*укажем максимальную ширину*/
-    margin: 0 auto 0 auto; /*отцентрируем и добавим отступ до следующего блока*/
-    }
-   
     .page__header {
-        width: 100% ;
+        width: 100%;
         height: 690px;
-        left: 0px;
-        top: 0px;       
+        background-color:  #F4F4F4;
+    }
+
+    .page__header-wrapper {
+        max-width: 340px;/*укажем максимальную ширину*/
+        margin: 0 auto 140px auto; /*отцентрируем и добавим отступ до следующего блока*/
+        height: 690px;
         background-color:  #F4F4F4;
     }
 
@@ -29,7 +27,8 @@
         position: absolute;
         width: 100%;
         height: 24px;
-        left: 0px;
+        left: 0;
+        margin: 0;
         top: 90px;
         font-family: 'Montserrat',sans-serif;
         font-style: normal;
@@ -45,7 +44,8 @@
         position: absolute;
         width: 100%;
         height: 30px;
-        left: 0px;
+        left: 0;
+        margin: 0;
         top: 126px;
         font-family: 'Montserrat',sans-serif;
         font-style: normal;
@@ -65,6 +65,7 @@
     .header__item--3_1 {
         position: absolute;
         left: -115px;
+        margin: 0;
         top: 166px;
         font-family: 'Montserrat',sans-serif;
         font-style: normal;
@@ -78,7 +79,8 @@
     .header__item--3_2 {
         position: absolute;
         height: 30px; 
-        left: 0px;
+        left: 0;
+        margin: 0;
         top: 161px;
         font-family: 'Montserrat',sans-serif;
         font-style: normal;
@@ -94,6 +96,7 @@
         width: 300px;
         height: 44px;
         left: 50%;
+        margin: 0;
         top: 211px;
         font-family: 'Prata';
         font-style: normal;
@@ -114,6 +117,7 @@
         width: 200px;
         height: 50px;
         left: 50%;
+        margin: 0;
         -ms-transform: translate(50%);/* центрирование кнопки по ширине */
         transform: translate(-50%);/* центрирование кнопки по ширине */
         top: 280px;
@@ -143,19 +147,20 @@
 
     .header__icon--1 {
         position: absolute;
-        width: 24px;
-        height: 24px;
+        width: 23px;
+        height: 16px;
         left: 20px;
-        top: 20px;
+        margin: 0;
+        top: 24px;
     }
 
     .header__icon--2 {
         position: absolute;
-        width: 100%;
+        width: 60px;
         height: 33px;
-        left: 0px;
+        left: auto;
+        margin-left: 140px;
         top: 19px;
-        text-align: center;
     }
 
     .header__social-networks {
@@ -304,10 +309,6 @@
     .reviews__item { /*стили для пункта инструкции*/
         display:block; /*расположим элементы в ряд*/
         flex-wrap:wrap; /*если будет слишком много пунктов, то пускай они переносятся на новую строку*/
-    }
-    
-    .reviews__image-wrapper {
-        
     }
     
     .reviews__block-wrapper {
@@ -493,23 +494,41 @@
     }
 
     .page__footer {
-        position: absolute;
-        width: 100% ;
+        max-width: 340px;/*укажем максимальную ширину*/
+        margin: 0 auto 0 auto; /*отцентрируем и добавим отступ до следующего блока*/
         height: 140px;
         left: 0px;
         background: #FFFFFF;
     }
 
     .footer__items {
-        position: static;
-        height: 30px;
+        position: relative;
+        width: 340px;
+        height: 18px;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         color: #999999;
         text-align: center;
-        transform: translateY(100%);
+        top: 33%;
+    }
+
+    .footer__item--1 {
+        clear: none;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    .footer__item--2 {
+        clear: none;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    .footer__item--3 {
+        clear: none;
+        margin: 0;
     }
     
     html,
