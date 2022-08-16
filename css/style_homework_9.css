@@ -218,7 +218,7 @@ html { /*здесь стили для всего документа*/
     height: 24px;
     left: auto;
     margin-left: 60px;
-    top: 64px;
+    top: 60px;
 }
 
 .header__icon--2 {
@@ -237,6 +237,12 @@ html { /*здесь стили для всего документа*/
     left: auto;
     margin-left: 718px;
     top: 60px;
+}
+
+.header__icons:hover svg path, /*здесь поменяем цвет иконки для состояний ссылок на соцсети.*/
+.header__icons:active svg path,
+.header__icons:focus svg path {
+    fill: rgba(34, 34, 34, 0.5);; /*этим свойством мы можем поменять цвет иконки, если ее код записан в коде страницы*/
 }
 
 .header__icon--3 {
