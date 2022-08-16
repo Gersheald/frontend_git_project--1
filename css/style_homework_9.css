@@ -163,7 +163,8 @@ html { /*здесь стили для всего документа*/
     letter-spacing: 0.02em; 
 }
 
-.header__button--1{
+.header__button--1 a,
+.header__button--1 a:visited{
     display: flex;/* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox. */
     flex-direction: row;/* CSS-свойство flex-direction задает способ размещения flex-элементов в flex-контейнере, определяя главную ось и направление (нормальное или обратное). */
     justify-content: center;/* Свойство CSS justify-content определяет, как браузер распределяет пространство между элементами контента и вокруг них вдоль основной оси гибкого контейнера и встроенной оси контейнера сетки. */
@@ -171,9 +172,22 @@ html { /*здесь стили для всего документа*/
     position: absolute;
     width: 220px;
     height: 60px;
+    border: 1px solid #222222;
     left: auto;
     margin-left: 370px;
     top: 676px;
+    color: #222222;
+    /* color: #222222; */
+    /*ссылка поменяет цвет шрифта*/
+    /* background-color: #222222; */
+}
+
+
+
+.header__button--1 a:hover, /*здесь пропишем состояния для ссылок в шапке*/
+.header__button--1 a:focus,
+.header__button--1 a:active {
+    color: #FFFFFF; /*ссылка поменяет цвет шрифта*/
     background-color: #222222;
 }
 
