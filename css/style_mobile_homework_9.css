@@ -15,7 +15,7 @@
     }
 
     .header__image--1 {
-        position: absolute;
+        position: relative;
         width: 340px;
         height:  320px;
         left: 50%;
@@ -135,6 +135,8 @@
         text-align: center;
         letter-spacing: 0.15em;
         text-transform: uppercase;
+        /* left: auto; */
+        /* margin-left: 140px; */
     }
 
     .header__links {
@@ -150,7 +152,9 @@
         width: 23px;
         height: 16px;
         left: 20px;
-        margin: 0;
+        /* left: auto;
+        margin-left: 20px; */
+        /* margin: 0; */
         top: 24px;
     }
 
