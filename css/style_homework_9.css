@@ -60,7 +60,6 @@ html { /*здесь стили для всего документа*/
     background-color: #fff; /* цвет фона для всей страницы*/
     max-width: 1920px;/*укажем максимальную ширину*/
     margin: 0 auto 0 auto; /*отцентрируем и добавим отступ до следующего блока*/
-    
 }
 
 .page__header {
@@ -68,8 +67,6 @@ html { /*здесь стили для всего документа*/
     height: 900px;
     background-color:  #F4F4F4;  
     margin-bottom: 140px;      
-    /* left: 0; */
-
 }
 
 .page__header-wrapper {
@@ -77,21 +74,14 @@ html { /*здесь стили для всего документа*/
     margin: 0 auto 0 auto; /*отцентрируем и добавим отступ до следующего блока*/
     height: 900px;
     background-color:  #F4F4F4;
-    /* left: 0; */
-    /* top: 0; */
-    /* padding: 0;
-    margin: 0; */
 }
 
 .header__image--1 {
     position: relative;
-    /* float: right; */
     left: 970px;
     top: 0px;
     width: 950px;
     height: 900px;
-    /* padding: 0;
-    margin: 0; */
 }
 
 .header__item--1 {
@@ -127,10 +117,7 @@ html { /*здесь стили для всего документа*/
 }
 
 .header__item--3 {
-    /* width: 1920px; */
     left: auto;
-    /* padding: 0;
-    margin: 0; */
 }
 
 .header__item--3_1 {
@@ -451,7 +438,6 @@ h2 { /*меняются св-ва шрифта и отступ у загловк
 }
 
 .main__prices {
-    /* width: 1920px; */
     width: 100%;
     height: 100%;
 }

@@ -12,7 +12,6 @@
         margin: 0 auto 0 auto; /*отцентрируем и добавим отступ до следующего блока*/
         height: 840px;
         background-color:  #F4F4F4;
-        /* background-color: aqua; */
     }
 
     .header__image--1 {
@@ -20,10 +19,6 @@
         width: 660px;
         height: 625px;
         left: 50%;
-        /* margin: 0;
-        padding: 0; */
-        /* left: auto;
-        margin-left: 54px; */
         top: 513.19px;
         text-align: center;
         display: flex;
@@ -38,7 +33,6 @@
         position: absolute;
         width: 768px;
         height: 24px;
-        /* left: 0; */
         margin: 0;
         top: 115px;
         font-family: 'Montserrat',sans-serif;
@@ -55,7 +49,6 @@
         position: absolute;
         width: 768px;
         height: 50px;
-        /* left: 0; */
         margin: 0;
         top: 184px;
         font-family: 'Montserrat',sans-serif;
@@ -71,15 +64,11 @@
     .header__item--3 {
         width: 768px;
         text-align: center;
-        /* background-color: aquamarine; */
     }
 
     .header__item--3_1 {
         position: absolute;
-        /* width: 20px; */
-        /* left: auto; */
         margin-left:-240px;
-        /* margin: 0; */
         top: 244px;
         font-family: 'Montserrat',sans-serif;
         font-style: normal;
@@ -93,7 +82,6 @@
     .header__item--3_2 {
         position: absolute;
         height: 50px; 
-        /* left: 0; */
         margin: 0;
         top: 244px;
         font-family: 'Montserrat',sans-serif;
@@ -109,7 +97,6 @@
         position: absolute;
         width: 360px;
         height: 52px;
-        /* left: 50%; */
         top: 317px;
         margin-left: 204px;
         font-family: 'Prata';
@@ -119,23 +106,18 @@
         line-height: 26px;
         text-align: center;
         letter-spacing: 0.02em;
-        /* -ms-transform: translate(-50%);
-        transform: translate(-50%);    */
     }
 
     .header__button--1{
         position: absolute;
         width: 220px;
         height: 60px;
-        /* left: 50%; */
         margin-left: 274px;
         top: 405px;
         display: flex;/* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox. */
         flex-direction: row;/* CSS-свойство flex-direction задает способ размещения flex-элементов в flex-контейнере, определяя главную ось и направление (нормальное или обратное). */
         justify-content: center; /* Свойство CSS justify-content определяет, как браузер распределяет пространство между элементами контента и вокруг них вдоль основной оси гибкого контейнера и встроенной оси контейнера сетки. */
         align-items: center;
-        /* -ms-transform: translate(-50%);
-        transform: translate(-50%); */
         background-color: #222222;
     }
 
@@ -165,8 +147,6 @@
         width: 24px;
         height: 24px;
         left: 30px;
-        /* left: auto;
-        margin-left: 30px; */
         margin: 0;
         top: 34px;
     }
@@ -178,7 +158,6 @@
         left: auto;
         margin-left: 355px;
         top: 29px;
-
     }
 
     .header__social-networks {
