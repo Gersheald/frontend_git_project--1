@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--метатег для масштабирования сайта при изменении ширины экрана. назначает, что размер экрана сайта будет соответствовать реальным размерам устройства, у соврмеменных мобильников реальная матрица телефонов сильно меньше 1920 px-->
         <title>Maxim Brown</title>
-        <link href="css/style_homework_9.css" rel="stylesheet"><!-- подключение CSS с заданными стилями-->
+        <!-- <link href="css/style_homework_9.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" href="css/style_homework_9.css" media="screen,projection" charset="utf-8" /> <!-- подключение CSS с заданными стилями-->
         <link href="css/style_tablet_homework_9.css" rel="stylesheet"><!-- подключение CSS с заданными стилями для адаптивной верстки под планшеты -->
         <link href="css/style_mobile_homework_9.css" rel="stylesheet"><!-- подключение CSS с заданными стилями для адаптивной верстки под смартфоны-->
+
+        <script type="text/javascript" src="/js/jquery-1.12.4.js"></script>    
+        <script type="text/javascript" src="/js/script.js"></script>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <!-- <title>model</title>     -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen,projection" charset="utf-8" />    -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/style_homework_9.css" media="screen,projection" charset="utf-8" />   -->
     </head>
 
     <body class="page__body">
@@ -14,7 +24,7 @@
             <div class="page__header-wrapper">
                 <div class="header__call-calling">
                     <div class="header__icons header__icon--1">
-                        <a class="header__links header__icon__link--1" href="#">
+                        <a class="header__links header__icon__link--1 b-sandwich js-sidebar-show" >
                             <!-- <img src="images/header.icon1.dark.png" alt="menu"> <img> -->
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 5C0 4.44772 0.447715 4 1 4H22C22.5523 4 23 4.44772 23 5C23 5.55228 22.5523 6 22 6H1C0.447715 6 0 5.55228 0 5Z" fill="#222222"/>
@@ -300,6 +310,21 @@
             <div class="footer__items footer__item--2">Политика конфиденциальности</div>
             <div class="footer__items footer__item--3">Разработка и маркетинг WebCanape</div>
         </footer>
+
+        <!--контент иконка показать бургер-->
+        <!-- <div class="b-sandwich js-sidebar-show"><img src="images/header.icon1.dark.svg"></div> -->
+        
+        <!--начало бургера-->
+        <div class="l-sidebar js-sidebar"></div>
+        <div class="l-sidebar_inner js-sidebar-inner">
+            <div class="b-sidebar">
+                <!--контент иконка закрыть бургер-->         
+                <div class="sidebar__close js-sidebar-hide"><img src="images/header.icon1.dark.svg"></div>
+                <!--контент бургера-->
+                <p>sidebar content</p>               
+            </div>
+        </div>
+        <!--конец бургера-->
 
     </body>
 </html>

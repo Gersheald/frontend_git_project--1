@@ -627,5 +627,63 @@ body { /* табличный способ фиксирования подвал�
 
 
 
-
+/*-------------------------*/
+.l-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 999;
+    display: none;
+}
+.l-sidebar_inner {
+    display: none;
+    z-index: 1000;
+}
+.l-sidebar_inner_open {
+    display: block;
+}
+/*-------------------------*/
+.b-sidebar {
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: auto;    
+    width: 200px;
+    max-width: auto;    
+    box-sizing: border-box;    
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .3);
+    background-color: #fff;
+    z-index: 1000;    
+    transition: left 0.5s ease-out;
+}
+.b-sidebar_open {
+    display: block;
+    transition: left 0.5s ease-out;
+}
+.b-sidebar .sidebar__close {
+    position: absolute;
+    top: 19px;
+    left: 17px;
+    z-index: 10;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 0;
+}
+/*-------------------------*/
+.b-sandwich {
+    position: absolute;
+    top: 19px;
+    left: 17px;
+    z-index: 10;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 0;
+}
+/*-------------------------*/
 
