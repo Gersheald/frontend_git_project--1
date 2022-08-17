@@ -6,17 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--метатег для масштабирования сайта при изменении ширины экрана. назначает, что размер экрана сайта будет соответствовать реальным размерам устройства, у соврмеменных мобильников реальная матрица телефонов сильно меньше 1920 px-->
         <title>Maxim Brown</title>
         <link href="css/style_desktop_homework_9.css" rel="stylesheet">
-        <!-- <link rel="stylesheet" type="text/css" href="css/style_desktop_homework_9.css" media="screen,projection" charset="utf-8" />  -->
-        <!-- подключение CSS с заданными стилями-->
         <link href="css/style_tablet_homework_9.css" rel="stylesheet"><!-- подключение CSS с заданными стилями для адаптивной верстки под планшеты -->
         <link href="css/style_mobile_homework_9.css" rel="stylesheet"><!-- подключение CSS с заданными стилями для адаптивной верстки под смартфоны-->
-
-        <script type="text/javascript" src="/js/jquery-1.12.4.js"></script>    
-        <script type="text/javascript" src="/js/script.js"></script>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <!-- <title>model</title>     -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen,projection" charset="utf-8" />    -->
-        <!-- <link rel="stylesheet" type="text/css" href="css/style_homework_9.css" media="screen,projection" charset="utf-8" />   -->
+        <script type="text/javascript" src="js/jquery-1.12.4.js"></script>    
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
 
     <body class="page__body">
@@ -25,12 +18,12 @@
             <div class="page__header-wrapper">
                 <div class="header__call-calling">
                     <div class="header__icons header__icon--1">
-                        <a class="header__links header__icon__link--1" >
-                            <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a class="header__links header__icon__link--1 js-sidebar-show"> 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 5C0 4.44772 0.447715 4 1 4H22C22.5523 4 23 4.44772 23 5C23 5.55228 22.5523 6 22 6H1C0.447715 6 0 5.55228 0 5Z" fill="#222222"/>
                                 <path d="M0 12C0 11.4477 0.447715 11 1 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H1C0.447715 13 0 12.5523 0 12Z" fill="#222222"/>
                                 <path d="M0 19C0 18.4477 0.447715 18 1 18H22C22.5523 18 23 18.4477 23 19C23 19.5523 22.5523 20 22 20H1C0.447715 20 0 19.5523 0 19Z" fill="#222222"/>
-                            </svg> -->
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -44,7 +37,6 @@
                 <div class="header__social-networks">
                     <div class="header__icons header__icon--3">
                         <a class="header__links header__icon__link--3" href="https://www.instagram.com">
-                            <!-- <img src="images/header.icon3.dark.svg" alt="instagram"> <img> -->
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.8503 0H7.14973C3.20735 0 0 3.20735 0 7.14973V16.8503C0 20.7926 3.20735 24 7.14973 24H16.8503C20.7926 24 24 20.7926 24 16.8503V7.14973C24 3.20735 20.7926 0 16.8503 0ZM21.5856 16.8503C21.5856 19.4655 19.4655 21.5856 16.8503 21.5856H7.14973C4.5345 21.5856 2.4144 19.4655 2.4144 16.8503V7.14973C2.4144 4.53446 4.5345 2.4144 7.14973 2.4144H16.8503C19.4655 2.4144 21.5856 4.53446 21.5856 7.14973V16.8503Z" fill="#222222"/>
                                 <path d="M12 5.79297C8.57729 5.79297 5.79272 8.57754 5.79272 12.0002C5.79272 15.4228 8.57729 18.2074 12 18.2074C15.4227 18.2074 18.2072 15.4229 18.2072 12.0002C18.2072 8.57749 15.4227 5.79297 12 5.79297ZM12 15.7931C9.90523 15.7931 8.20712 14.095 8.20712 12.0002C8.20712 9.90547 9.90527 8.20737 12 8.20737C14.0947 8.20737 15.7928 9.90547 15.7928 12.0002C15.7928 14.0949 14.0947 15.7931 12 15.7931Z" fill="#222222"/>
@@ -54,7 +46,6 @@
                     </div>
                     <div class="header__icons header__icon--4">
                         <a class="header__links header__icon__link--4" href="https://www.vkontakte.ru">
-                            <!-- <img src="images/header.icon4.dark.svg" alt="vkontakte"> <img> -->
                             <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4493 1.77512C23.6161 1.21306 23.4493 0.800049 22.6553 0.800049H20.0297C19.3621 0.800049 19.0543 1.15683 18.8874 1.55025C18.8874 1.55025 17.5521 4.83829 15.6606 6.97409C15.0487 7.59233 14.7705 7.78904 14.4367 7.78904C14.2698 7.78904 14.0282 7.59233 14.0282 7.03031V1.77512C14.0282 1.10065 13.8345 0.800049 13.2781 0.800049H9.15213C8.73494 0.800049 8.48403 1.11309 8.48403 1.40977C8.48403 2.04916 9.42974 2.19661 9.52722 3.99522V7.9015C9.52722 8.75794 9.37413 8.91322 9.04032 8.91322C8.15023 8.91322 5.98507 5.61049 4.70093 1.83131C4.44927 1.09676 4.19686 0.800049 3.52583 0.800049H0.900217C0.150043 0.800049 0 1.15683 0 1.55025C0 2.25284 0.89014 5.73759 4.14464 10.3464C6.31429 13.4939 9.37118 15.2 12.1528 15.2C13.8218 15.2 14.0283 14.8211 14.0283 14.1684V11.7895C14.0283 11.0316 14.1864 10.8804 14.7149 10.8804C15.1043 10.8804 15.7719 11.0771 17.3296 12.5946C19.1099 14.3932 19.4034 15.2 20.4047 15.2H23.0304C23.7805 15.2 24.1556 14.8211 23.9392 14.0733C23.7024 13.3279 22.8525 12.2466 21.7247 10.9647C21.1127 10.234 20.1947 9.44717 19.9165 9.05365C19.5271 8.54787 19.6384 8.32299 19.9165 7.87339C19.9165 7.87339 23.1155 3.32074 23.4493 1.77512Z" fill="#222222"/>
                             </svg>
@@ -62,7 +53,6 @@
                     </div>
                     <div class="header__icons header__icon--5">
                         <a class="header__links header__icon__link--5" href="https://www.telegram.org">
-                            <!-- <img src="images/header.icon5.dark.svg" alt="telegram"> <img>     -->
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23.5468 0.496888C23.1374 0.153447 22.4944 0.104307 21.8295 0.368368H21.8285C21.1292 0.645929 2.03537 8.74811 1.25808 9.07913C1.11671 9.12773 -0.118008 9.5835 0.00917513 10.5987C0.122712 11.514 1.11507 11.8931 1.23625 11.9368L6.09049 13.5811C6.41255 14.6417 7.59977 18.5545 7.86233 19.3905C8.02608 19.9116 8.293 20.5963 8.7608 20.7372C9.17128 20.8938 9.57957 20.7507 9.84376 20.5455L12.8116 17.8223L17.6025 21.5186L17.7166 21.5861C18.0419 21.7287 18.3536 21.8 18.6511 21.8C18.8809 21.8 19.1014 21.7573 19.3121 21.672C20.0299 21.3804 20.317 20.7038 20.347 20.6271L23.9256 2.22543C24.144 1.24263 23.8405 0.742589 23.5468 0.496888ZM10.3716 14.2388L8.73405 18.5589L7.0965 13.1588L19.6511 3.97882L10.3716 14.2388Z" fill="#222222"/>
                             </svg>
@@ -90,10 +80,12 @@
         </header>
 
         <main class="page__main">
+
             <section class="main__textboxes main__textbox--1">
                 <div class="main__text--1">Услуги профессионального фотографа, привлечение к съемкам лучших специалистов. Решение творческих и организационных задач любой сложности. Создание рекламных фотографий и выразительных портретов. Профессиональная работа в студии и на выезде.</div>
             </section>
-            <section class="main__textboxes main__textbox--2">
+
+            <section class="main__textboxes main__textbox--2" id="section__1">
                 <div class = " main__images main__image--1">
                     <img src="images/benefits.image.jpg" width = "100%" height = "100%" alt=" "> <img>   
                 </div>
@@ -126,7 +118,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="main__portfolio">
+            <section class="main__portfolio" id="section__2">
                 <h2>Портфолио</h2> <!--заголовок блока. Заголовку не добавляем класс, т.к. все заголовки h2 выглядят одинаково. Просто запишем стили для всех таких заголовков по тегу-->
                 <ul class="portfolio__list"> <!--список статей-->
                     <li class="portfolio__item"> <!--пункт списка, в который добавляем все содерживое статьи-->
@@ -172,7 +164,7 @@
                 </ul>
             </section>
 
-            <section class="main__reviews">
+            <section class="main__reviews" id="section__3">
                 <h2>Отзывы</h2> <!--заголовок блока. Заголовку не добавляем класс, т.к. все заголовки h2 выглядят одинаково. Просто запишем стили для всех таких заголовков по тегу-->
                 <ul class="reviews__list"> <!--список статей-->
                     <li class="reviews__item"> <!--пункт списка, в который добавляем все содерживое статьи-->
@@ -251,7 +243,7 @@
                 </ul>
             </section>
 
-            <section class="main__prices">
+            <section class="main__prices" id="section__4">
                 <div class="main__prices-wrapper">
 
                     <div class = "prices__image-wrapper prices__images">
@@ -303,7 +295,7 @@
                 </div>
             </section>
             
-        </main >  
+        </main>  
 
         <footer class="page__footer">
             <div class="footer__items footer__item--1">© Фотограф Максим Браун 2022</div>
@@ -311,33 +303,65 @@
             <div class="footer__items footer__item--3">Разработка и маркетинг WebCanape</div>
         </footer>
 
-        <!--контент иконка показать бургер-->
-        <div class="b-sandwich js-sidebar-show"><img src="images/header.icon1.dark.svg"></div>
-        <!-- <div class="b-sandwich js-sidebar-show">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 5C0 4.44772 0.447715 4 1 4H22C22.5523 4 23 4.44772 23 5C23 5.55228 22.5523 6 22 6H1C0.447715 6 0 5.55228 0 5Z" fill="#222222"/>
-                <path d="M0 12C0 11.4477 0.447715 11 1 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H1C0.447715 13 0 12.5523 0 12Z" fill="#222222"/>
-                <path d="M0 19C0 18.4477 0.447715 18 1 18H22C22.5523 18 23 18.4477 23 19C23 19.5523 22.5523 20 22 20H1C0.447715 20 0 19.5523 0 19Z" fill="#222222"/>
-            </svg>
-        </div> -->
-        <!--начало бургера-->
-        <div class="l-sidebar js-sidebar"></div>
-        <div class="l-sidebar_inner js-sidebar-inner">
-            <div class="b-sidebar">
-                <!--контент иконка закрыть бургер-->         
-                <!-- <div class="sidebar__close js-sidebar-hide"><img src="images/header.icon1.dark.svg"></div> -->
-                <!-- <div class="sidebar__close js-sidebar-hide">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 5C0 4.44772 0.447715 4 1 4H22C22.5523 4 23 4.44772 23 5C23 5.55228 22.5523 6 22 6H1C0.447715 6 0 5.55228 0 5Z" fill="#222222"/>
-                        <path d="M0 12C0 11.4477 0.447715 11 1 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H1C0.447715 13 0 12.5523 0 12Z" fill="#222222"/>
-                        <path d="M0 19C0 18.4477 0.447715 18 1 18H22C22.5523 18 23 18.4477 23 19C23 19.5523 22.5523 20 22 20H1C0.447715 20 0 19.5523 0 19Z" fill="#222222"/>
-                    </svg>
-                </div> -->
-                <!--контент бургера-->
-                <p>sidebar content</p>               
+        <div class="page__sidebar"><!--начало бургера-->
+            <div class="l-sidebar js-sidebar"></div>
+            <div class="l-sidebar_inner js-sidebar-inner">
+                <div class="b-sidebar">    
+                    <div class="sidebar__close js-sidebar-hide"><!--контент иконка закрыть бургер-->  
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289Z" fill="black"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7071 4.29289C19.3166 3.90237 18.6834 3.90237 18.2929 4.29289L4.29289 18.2929C3.90237 18.6834 3.90237 19.3166 4.29289 19.7071C4.68342 20.0976 5.31658 20.0976 5.70711 19.7071L19.7071 5.70711C20.0976 5.31658 20.0976 4.68342 19.7071 4.29289Z" fill="black"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="sidebar__description-wrapper sidebar__descriptions"> <!--контент бургера-->
+                        <a class="sidebar__title" href="#section__1">
+                            <p>Обо мне</p>  
+                        </a>
+                        <a class="sidebar__title" href="#section__2">
+                            <p>Портфолио</p> 
+                        </a>
+                        <a class="sidebar__title" href="#section__3">
+                            <p>Отзывы</p>
+                        </a>
+                        <a class="sidebar__title" href="#section__4">
+                            <p>Стоимость</p> 
+                        </a>  
+                    </div>
+                    <div class="sidebar__social-networks">
+                        <div class="sidebar__icons sidebar__icon--3">
+                            <a class="sidebar__links sidebar__icon__link--3" href="https://www.instagram.com">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.8503 0H7.14973C3.20735 0 0 3.20735 0 7.14973V16.8503C0 20.7926 3.20735 24 7.14973 24H16.8503C20.7926 24 24 20.7926 24 16.8503V7.14973C24 3.20735 20.7926 0 16.8503 0ZM21.5856 16.8503C21.5856 19.4655 19.4655 21.5856 16.8503 21.5856H7.14973C4.5345 21.5856 2.4144 19.4655 2.4144 16.8503V7.14973C2.4144 4.53446 4.5345 2.4144 7.14973 2.4144H16.8503C19.4655 2.4144 21.5856 4.53446 21.5856 7.14973V16.8503Z" fill="#222222"/>
+                                    <path d="M12 5.79297C8.57729 5.79297 5.79272 8.57754 5.79272 12.0002C5.79272 15.4228 8.57729 18.2074 12 18.2074C15.4227 18.2074 18.2072 15.4229 18.2072 12.0002C18.2072 8.57749 15.4227 5.79297 12 5.79297ZM12 15.7931C9.90523 15.7931 8.20712 14.095 8.20712 12.0002C8.20712 9.90547 9.90527 8.20737 12 8.20737C14.0947 8.20737 15.7928 9.90547 15.7928 12.0002C15.7928 14.0949 14.0947 15.7931 12 15.7931Z" fill="#222222"/>
+                                    <path d="M18.2193 7.32683C19.0408 7.32683 19.7067 6.6609 19.7067 5.83944C19.7067 5.01798 19.0408 4.35205 18.2193 4.35205C17.3979 4.35205 16.7319 5.01798 16.7319 5.83944C16.7319 6.6609 17.3979 7.32683 18.2193 7.32683Z" fill="#222222"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="sidebar__icons sidebar__icon--4">
+                            <a class="sidebar__links sidebar__icon__link--4" href="https://www.vkontakte.ru">
+                                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4493 1.77512C23.6161 1.21306 23.4493 0.800049 22.6553 0.800049H20.0297C19.3621 0.800049 19.0543 1.15683 18.8874 1.55025C18.8874 1.55025 17.5521 4.83829 15.6606 6.97409C15.0487 7.59233 14.7705 7.78904 14.4367 7.78904C14.2698 7.78904 14.0282 7.59233 14.0282 7.03031V1.77512C14.0282 1.10065 13.8345 0.800049 13.2781 0.800049H9.15213C8.73494 0.800049 8.48403 1.11309 8.48403 1.40977C8.48403 2.04916 9.42974 2.19661 9.52722 3.99522V7.9015C9.52722 8.75794 9.37413 8.91322 9.04032 8.91322C8.15023 8.91322 5.98507 5.61049 4.70093 1.83131C4.44927 1.09676 4.19686 0.800049 3.52583 0.800049H0.900217C0.150043 0.800049 0 1.15683 0 1.55025C0 2.25284 0.89014 5.73759 4.14464 10.3464C6.31429 13.4939 9.37118 15.2 12.1528 15.2C13.8218 15.2 14.0283 14.8211 14.0283 14.1684V11.7895C14.0283 11.0316 14.1864 10.8804 14.7149 10.8804C15.1043 10.8804 15.7719 11.0771 17.3296 12.5946C19.1099 14.3932 19.4034 15.2 20.4047 15.2H23.0304C23.7805 15.2 24.1556 14.8211 23.9392 14.0733C23.7024 13.3279 22.8525 12.2466 21.7247 10.9647C21.1127 10.234 20.1947 9.44717 19.9165 9.05365C19.5271 8.54787 19.6384 8.32299 19.9165 7.87339C19.9165 7.87339 23.1155 3.32074 23.4493 1.77512Z" fill="#222222"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="sidebar__icons sidebar__icon--5">
+                            <a class="sidebar__links sidebar__icon__link--5" href="https://www.telegram.org">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.5468 0.496888C23.1374 0.153447 22.4944 0.104307 21.8295 0.368368H21.8285C21.1292 0.645929 2.03537 8.74811 1.25808 9.07913C1.11671 9.12773 -0.118008 9.5835 0.00917513 10.5987C0.122712 11.514 1.11507 11.8931 1.23625 11.9368L6.09049 13.5811C6.41255 14.6417 7.59977 18.5545 7.86233 19.3905C8.02608 19.9116 8.293 20.5963 8.7608 20.7372C9.17128 20.8938 9.57957 20.7507 9.84376 20.5455L12.8116 17.8223L17.6025 21.5186L17.7166 21.5861C18.0419 21.7287 18.3536 21.8 18.6511 21.8C18.8809 21.8 19.1014 21.7573 19.3121 21.672C20.0299 21.3804 20.317 20.7038 20.347 20.6271L23.9256 2.22543C24.144 1.24263 23.8405 0.742589 23.5468 0.496888ZM10.3716 14.2388L8.73405 18.5589L7.0965 13.1588L19.6511 3.97882L10.3716 14.2388Z" fill="#222222"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>   
+                    <div class="sidebar__buttons sidebar__button--1">
+                        <a class="sidebar__links sidebar__button__link--1" href="#">
+                            <span class="sidebar__button__text--1">Записаться</span>
+                        </a>
+                    </div>          
+                </div>
             </div>
-        </div>
-        <!--конец бургера-->
-
+        </div><!--конец бургера-->
+        
     </body>
 </html>

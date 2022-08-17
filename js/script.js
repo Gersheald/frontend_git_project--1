@@ -6,7 +6,6 @@ $(function(){
 
         $('.js-sidebar').fadeIn('1000');
         $('html, body').css('overflow', 'hidden');
-
     };
     function hideSidebar() {
         $('.js-sidebar-inner').removeClass('l-sidebar_inner_open');
@@ -23,7 +22,6 @@ $(function(){
         event.preventDefault();
         hideSidebar();
     });
-
 });
   
 
